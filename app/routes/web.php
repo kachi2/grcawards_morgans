@@ -37,7 +37,7 @@ use App\Http\Controllers\ReminderController;
 
 
 
-Route::prefix('eu/admin')->group(function(){
+Route::prefix('admin')->group(function(){
     Route::get('login', [AdminLoginController::class, 'showAdminLoginForm'])->name('admin.login');
     Route::post('login', [AdminLoginController::class, 'login'])->name('admin.loginn');
     Route::get('/images/upload', [AdminController::class, 'UploadFile'])->name('admin.UploadFile');
@@ -114,7 +114,7 @@ Route::prefix('eu/admin')->group(function(){
 
 // require __DIR__.'/Ukroutes.php';
 
-Route::prefix('eu')->group(function(){
+// Route::prefix('eu')->group(function(){
 Route::get('register', [VoterRegisterController::class, 'showRegisterForm'])->name('show_register_form');
 Route::post('register', [VoterRegisterController::class, 'register'])->name('register');
 Route::get('register/success', [VoterRegisterController::class, 'showPostRegisterForm'])->name('register_success');
@@ -161,4 +161,4 @@ Route::post('/vote/nominees', [VoteController::class, 'addVote'])->name('add.vot
 Route::get('{award}/vote/media/{nominee}', [VoteController::class, 'addMediaVote'])->name('add.media.vote');
 Route::get('logout', [VoterLoginController::class,'logout'])->name('logout');
 
-});
+// });
