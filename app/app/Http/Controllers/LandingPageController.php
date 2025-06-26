@@ -63,8 +63,6 @@ class LandingPageController extends Controller
 
     public function showVote(Request $req, $categories_id = null)
     {  
-
-       
         $current_award_program = AwardProgram::where('status', 1)->latest()->first();
         $categories = Category::where(['award_program_id' => $current_award_program->id])->simplePaginate(1);
        foreach($categories  as $category){
@@ -151,6 +149,7 @@ class LandingPageController extends Controller
         $awardPrograms = [];
         $award_programs = AwardProgram::all();
         foreach($award_programs as $award_program){
+            if($award_program->id == 5) continue;
             $gallery = Gallery::where(['award_program_id'=> $award_program->id,'type'=> 'image' ])->inRandomOrder()->limit(1)->first();
             $award_program->hashid = Hashids::connection('awardProgram')->encode($award_program->id);
             if ($gallery->count() > 0){
