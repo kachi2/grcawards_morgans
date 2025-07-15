@@ -69,6 +69,7 @@ class LandingPageController extends Controller
                Session::flash('msg','Request send Successfully,  We review your request and update accordingly');
                return back();
         }
+        return back();
     }
 
     public function showTheOrganizers()

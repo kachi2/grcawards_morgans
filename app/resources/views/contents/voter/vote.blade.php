@@ -172,7 +172,7 @@
 																</div>
 																<div class="modal-body">
 																	<label for="nominee_name" style="color:#000"> Enter name of Nominee</label>
-																	<input type="text" name="nominee_name[]" placeholder="enter nominee name"> 
+																	<input type="text" name="nominee_name" placeholder="enter nominee name"> 
 																	<label for="reason" style="color:#000" name="reason"> Enter reason why you want us to include this nominee on the list</label>
 																	<textarea placeholder="enter reasons "> </textarea>
 																	<input type="hidden"  name="awards_id" value="{{$award->hashid}}">
