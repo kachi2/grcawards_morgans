@@ -69,6 +69,12 @@
                                                             {{$award->name}}
                                                         </li>
                                                         @endforeach
+                                                             <h5> Nominees </h5>
+                                                          @foreach ($sector->nominees as $nominee)
+                                                          <li>
+                                                          {{$nominee->name}}
+                                                          </li>
+                                                          @endforeach
                                                         @endif
                                                     </ul>
                                                 </div>
