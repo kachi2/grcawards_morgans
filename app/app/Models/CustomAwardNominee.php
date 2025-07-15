@@ -9,5 +9,5 @@ class CustomAwardNominee extends Model
 {
     use HasFactory;
 
-    protected $gaurd = [];
+    protected $gaurded = [];
 }
