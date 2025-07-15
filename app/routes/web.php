@@ -158,4 +158,6 @@ Route::post('/vote/nominees', [VoteController::class, 'addVote'])->name('add.vot
 Route::get('{award}/vote/media/{nominee}', [VoteController::class, 'addMediaVote'])->name('add.media.vote');
 Route::get('logout', [VoterLoginController::class,'logout'])->name('logout');
 
+Route::post('add/new/nominee', [LandingPageController::class, 'AddNewNominee'])->name('add.nominee_new');
+
 // });

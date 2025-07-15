@@ -52,6 +52,21 @@ class LandingPageController extends Controller
         return view('contents.voter.sectors_categories')->with(['categories'=>$categories]);
     }
 
+        public function AddNewNominee(Request $req)
+    {
+        $award_id = Hashids::connection('award')->decode($req->awards_id)[0];
+        $awards = Award::where('id', $award_id)->first();
+        if($awards)
+        {
+            $awards->nominees = array_merge(json_decode($awards->nominees, true)??[], $req->nominee_name);
+            $awards->save();
+               Session::flash('msg','Request send Successfully,  We review your request and update accordingly');
+               return back();
+        }
+
+
+    }
+
     public function showTheOrganizers()
     {
         return view('contents.voter.organizers');
