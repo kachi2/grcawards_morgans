@@ -33,21 +33,19 @@ class JudgesController extends Controller
      return $this->middleware('auth:admin');
     }
 
-
     public function getJudges(Request $request, $award_program)
     {
         //not sure what this does
         $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
         if (isset($award_program_id[0])) {
             //get judges
-            $data['judges'] = Judge::where('award_program_id', 5)->get();
+            $current_award_program = AwardProgram::where('status', 1)->latest()->first();
+            $data['judges'] = Judge::where('award_program_id', $current_award_program->id)->get();
             $data['award_program'] = $award_program;
             //mask the id for each judge
             foreach ($data['judges'] as $judge) {
                  $judge->hashid = Hashids::connection('judges')->encode($judge->id);
             }
-
-            //load view
             return view('contents.admin.judges', $data);
         }
         //if we get an invalid award program id, just go back to previous page
@@ -59,7 +57,6 @@ class JudgesController extends Controller
     public function Index(Request $request, $award_program)
     {
         // $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
-
         $categories = Category::where('award_program_id', $award_program)->get();
         foreach ($categories as $category) {
             $category->hashid = Hashids::connection('category')->encode($category->id);
@@ -89,9 +86,6 @@ class JudgesController extends Controller
     return view('contents.admin.judge.judgeCategories')
     ->with('categories', $categories);
 
-
-
-    // -----------------old files --------------------------
         $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
         if (isset($award_program_id[0]) && AwardProgram::where('id', $award_program_id[0])->exists()) {
             $data['categories'] = AwardProgram::find($award_program_id[0])->categories;
