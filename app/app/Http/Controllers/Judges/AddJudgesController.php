@@ -8,6 +8,7 @@ use App\Models\Admin;
 use App\Models\AwardProgram;
 use App\Models\Judge;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Vinkla\Hashids\Facades\Hashids;
@@ -35,6 +36,7 @@ class AddJudgesController extends Controller
         $award_program_id = AwardProgram::where('status', 1)->first();
         if (isset($award_program_id)) {
             try{
+                DB::transaction();
                 //  $password = substr(str_replace('','/, =, +, &, %, #, @, !', base64_encode(random_bytes(20))), 0,10);
                 $admin = new Admin();
                 $admin->firstname = $firstName;
@@ -44,7 +46,7 @@ class AddJudgesController extends Controller
                 $admin->password = bcrypt($request->password);
                 $admin->save();
 
-                sleep(2);
+                sleep(1);
                 $admins = Admin::latest()->first();
                 $judge = new Judge;
                 $judge->admin_id = $admins->id;
@@ -62,11 +64,13 @@ class AddJudgesController extends Controller
                     'password' => $request->password
                 ];
 
+                DB::commit();
               Mail::to([$request->email, 'no-reply@grcfincrimeawards.com'])->send(new JudgesRegister($data));
                     $request->session()->flash('success', 'Judge Added Successfully');
                     return redirect()->route('admin.get_judges', $award_program);
             }catch(\Exception $e)
             {
+                DB::rollBack();
                 $request->session()->flash('danger', $e->getMessage()); // return error
                 return redirect()->route('admin.get_judges', $award_program);
             }
