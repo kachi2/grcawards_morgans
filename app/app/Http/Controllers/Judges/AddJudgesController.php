@@ -31,8 +31,9 @@ class AddJudgesController extends Controller
             $LastName = $names[1]??"Admin";
 
             
-        $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
-        if (isset($award_program_id[0]) && AwardProgram::where('id', $award_program_id[0])->exists()) {
+        // $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
+        $award_program_id = AwardProgram::where('status', 1)->first();
+        if (isset($award_program_id)) {
             try{
                 //  $password = substr(str_replace('','/, =, +, &, %, #, @, !', base64_encode(random_bytes(20))), 0,10);
                 $admin = new Admin();
@@ -48,7 +49,7 @@ class AddJudgesController extends Controller
                 $judge = new Judge;
                 $judge->admin_id = $admins->id;
                 $judge->name = $request->fullname;
-                $judge->award_program_id  = $award_program_id[0];
+                $judge->award_program_id  = $award_program_id->id;
                 $judge->position = $request->position; 
                 $judge->profile = $request->profile; 
                 $judge->email = $request->email;

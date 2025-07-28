@@ -26,20 +26,15 @@ class UpdateAdminController extends Controller
             $request->session()->flash('danger',$validated->errors()->first());
             return back()->withInput($request->all())->withErrors($validated);
         }
-        $names = explode(' ', $request->judge_fullname);
-        if($names[0]){
-            $firstName = $names[0];
-        }else{
-            $firstName = "Admin";
-        }
-        if($names[1]){
-            $LastName = $names[1];
-        }else{
-            $LastName = "Admin";
-        }
+        $names = explode(' ', $request->fullname);
+        // dd($request->fullname);
+         $firstName = $names[0]??"Admin";
+            $LastName = $names[1]??"Admin";
 
-        $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
-        if (isset($award_program_id[0]) && AwardProgram::where('id', $award_program_id[0])->exists()) {
+            
+        // $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
+        $award_program_id = AwardProgram::where('status', 1)->first();
+        if (isset($award_program_id)) {
                 //  $password = substr(str_replace('','/, =, +, &, %, #, @, !', base64_encode(random_bytes(20), true)), 0,10);
                 $judge = Judge::where('id', $request->judge_id)->first();
             try{
@@ -56,7 +51,7 @@ class UpdateAdminController extends Controller
                     $judge->admin_id = $admin->id;   
                 }
                 $judge->name = $request->judge_fullname;
-                $judge->award_program_id  = $award_program_id[0];
+                $judge->award_program_id  = $award_program_id->id;
                 $judge->position = $request->position; 
                 $judge->profile = $request->profile; 
                 $judge->email = $request->judge_email;
