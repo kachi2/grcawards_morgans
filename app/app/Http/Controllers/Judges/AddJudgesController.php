@@ -35,8 +35,9 @@ class AddJudgesController extends Controller
         // $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
         $award_program_id = AwardProgram::where('status', 1)->first();
         if (isset($award_program_id)) {
+            DB::beginTransaction();
             try{
-                DB::transaction();
+          
                 //  $password = substr(str_replace('','/, =, +, &, %, #, @, !', base64_encode(random_bytes(20))), 0,10);
                 $admin = new Admin();
                 $admin->firstname = $firstName;
