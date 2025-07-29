@@ -16,7 +16,7 @@ use Vinkla\Hashids\Facades\Hashids;
 class AddJudgesController extends Controller
 {
     public function addJudges(Request $request, $award_program)
-    {
+    { 
         $validated = Validator::make($request->all(),[
             'fullname' => 'required',
             'email' => 'required|unique:admins,email',
