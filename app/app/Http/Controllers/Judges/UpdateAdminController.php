@@ -21,6 +21,7 @@ class UpdateAdminController extends Controller
             'judge_fullname' => 'required',
             // 'judge_email' => 'required|unique:admins,email',
             'judge_password' => 'required|min:5',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048'
         ]);
         if($validated->fails()){
             $request->session()->flash('danger',$validated->errors()->first());
@@ -56,6 +57,19 @@ class UpdateAdminController extends Controller
                 $judge->profile = $request->profile; 
                 $judge->email = $request->judge_email;
                 $judge->password = bcrypt($request->judge_password);
+                // ✅ Handle image upload
+                if ($request->hasFile('image')) {
+                    $image = $request->file('image');
+                    $imageName = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+                    $destinationPath = public_path('assets/images/judges');
+
+                    if (!file_exists($destinationPath)) {
+                        mkdir($destinationPath, 0755, true);
+                    }
+
+                    $image->move($destinationPath, $imageName);
+                    $judge->path_to_image = 'assets/images/judges/' . $imageName;
+                }
                 $judge->save();
                 $data = [
                     'name' => $request->judge_fullname,
@@ -74,7 +88,7 @@ class UpdateAdminController extends Controller
                 return redirect()->route('admin.get_judges', $award_program);
             }
             return back();
-    }
+        }
 
-}
+    }
 }
