@@ -16,11 +16,12 @@ use Vinkla\Hashids\Facades\Hashids;
 class AddJudgesController extends Controller
 {
     public function addJudges(Request $request, $award_program)
-    {
+    { 
         $validated = Validator::make($request->all(),[
             'fullname' => 'required',
             'email' => 'required|unique:admins,email',
             'password' => 'required|min:5',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048'
         ]);
         if($validated->fails()){
             $request->session()->flash('error', 'Some Fields are missing');
@@ -30,14 +31,28 @@ class AddJudgesController extends Controller
         // dd($request->fullname);
          $firstName = $names[0]??"Admin";
             $LastName = $names[1]??"Admin";
-
+ 
             
         // $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
         $award_program_id = AwardProgram::where('status', 1)->first();
         if (isset($award_program_id)) {
             DB::beginTransaction();
             try{
-          
+                
+                // Handle image upload
+                $imagePath = null;
+                if ($request->hasFile('image')) {
+                    $image = $request->file('image');
+                    $imageName = time() . '_' . uniqid() . '.' . $image->getClientOriginalExtension();
+                    $destinationPath = public_path('assets/images/judges');
+                    
+                    if (!file_exists($destinationPath)) {
+                        mkdir($destinationPath, 0755, true);
+                    }
+
+                    $image->move($destinationPath, $imageName);
+                    $imagePath = 'assets/images/judges/' . $imageName; // relative to public/
+                }
                 //  $password = substr(str_replace('','/, =, +, &, %, #, @, !', base64_encode(random_bytes(20))), 0,10);
                 $admin = new Admin();
                 $admin->firstname = $firstName;
@@ -56,6 +71,7 @@ class AddJudgesController extends Controller
                 $judge->position = $request->position; 
                 $judge->profile = $request->profile; 
                 $judge->email = $request->email;
+                $judge->path_to_image = $imagePath; // Save path to DB
                 $judge->password = bcrypt($request->password);
                 $judge->save();
 

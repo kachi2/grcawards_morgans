@@ -9,11 +9,11 @@ class Judge extends Model
 {
     use HasFactory;
 
-
+  
     protected $table = "judges";
 
     protected $fillable = ['name', 'profile','award_program_id', 'path_to_image', 'position', 'fb_link', 'ig_link', 'ln_link', 'admin_id', 'is_voted'];
-
+ 
     public function awardProgram(){
         return $this->belongsTo(AwardProgram::class, 'award_program_id');
     }
