@@ -3,6 +3,8 @@
 @section('title', 'Admin Dashboard')
 @section('content')
 <div class="container-fluid">
+
+    <!-- start page title -->
     <div class="row">
         <div class="col-12">
             <div class="page-title-box" style="margin-top: 20px; margin-bottom: 20px;">
@@ -28,23 +30,20 @@
     <!-- end row-->
     <div class="row" style="background: #eee; padding-top:100px"> 
         @foreach ($categories as $category)
-        <div class="col-md-0"> 
-            <div class="col-md-12"> 
-                <div style="text-align: right; padding: 15px" >  {{$categories->links()}} </div>
-            </div> 
-         </div> 
+        <div class="col-md-0">  </div> 
         <div class="col-md-12">
             <div class="card" >
                 <div class="card-body">
-                  <h2 class="card-title">{{$category->name}} </h2>
+                  <h2 class="card-title">{{$category->name}}   <span style="float:right"> @if(count($category->AdminVotes()) == count($category->countAwards(4))) <span style="color:#ffffff; background:green; padding:5px; border-radius:5px">  Completed: {{count($category->AdminVotes())}}/{{count($category->countAwards(4))}}  </span> @else <span style="color:#8d0509">  Completed: {{count($category->AdminVotes())}}/{{count($category->countAwards(4))}}  </span> @endif</span>  </h2>
                   <p class="card-text">{{substr($category->description,0,100).'...'}}</p>
                   @php
                       $category->hashid = Hashids::connection('category')->encode($category->id);
                   @endphp
+                  {{-- <a href="{{route('admin.load_judge_category_sector_page', [request()->segment(3), $category->hashid])}}" class="btn btn-primary"> {{count($category->sectors)}} Sectors - View All </a> --}}
                 </div>
               </div>
         </div> 
-       
+        <div class="col-md-0">  </div> 
 
             @foreach ($category->sectors as $sector)
             <div class="col-md-0">  </div> 
@@ -52,13 +51,17 @@
                 <div class="card" >
                     <div class="card-body">
                       <h3 class="card-title">
+                        {{-- <a href="#sectors" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sectors" onclick="getSectorData({{$sector->id}})">
+                            {{$sector->name}}
+                          </a>
+                           --}}
                            @php
                           $sector->hashid = Hashids::connection('sector')->encode($sector->id);
                           $category->hashid = Hashids::connection('category')->encode($category->id);
                             @endphp
-                           {{-- <a href="{{route('admin.load_judge_awards', [request()->segment(3), $category->hashid, $sector->hashid])}}" > --}}
-                           <span class="badge badge-outline-primary"> {{$sector->name}}</span> 
-                          {{-- </a> --}}
+                           <a href="{{route('admin.load_judge_awards', [request()->segment(3), $category->hashid, $sector->hashid])}}" >
+                            {{$sector->name}}
+                          </a>
     
                            <p class="sectorid" hidden>{{$sector->id}}</p>
                       </h3>
@@ -67,10 +70,16 @@
     <div class="collapse show">
         <div class="card card-body" style="overflow: scroll">
           @if ($sector->awards)
+            {{-- @php
+            $sector = Hashids::connection('sector')->decode(request()->segment(7));
+            $sector_name = DB::table('sectors')->find($sector[0])->name;
+            @endphp --}}
 
           <table class="table table-responsive table-striped">
+
             <h4>
                 <strong>      SECTOR AWARDS</strong>
+          
             </h4>
             <thead>
               <tr>
@@ -90,8 +99,11 @@
                 @endphp
                 <tr>
                     <th scope="row">{{$loop->iteration}}
+                  
                     </th>
                     <td>{{$award->name}} 
+
+                    
                     </td>
                     <td>{{substr($award->description,0,100)}} <button style="border:none; color:blue;"  onClick="readMore({{$index}})" id="btn-{{$index}}">read more </button> 
                        <span hidden id="detail-{{$index}}"> {{substr($award->description,100,10000)}}  </span> 
@@ -133,8 +145,11 @@
                    
                     </td>
                     <td>
+                      @if($award->IsJudgeVoted($award->id))
+                      <i style="color:green" aria-hidden="true"> <strong>Voted</strong></i>
+                      @endif
                     </td>
-                   <td><a href="{{route('admin.create_nominess_awards',[request()->segment(3), $award->hashid])}}" class="btn btn-sm btn-success">Add Nominee Voting Criteria</a></td>
+                    <td><a href="{{route('admin.view_nominess_awards',[request()->segment(3), $award->hashid])}}" class="btn btn-sm btn-success">Vote Nominee</a></td>
                 </tr>  
                   <br>
                   
@@ -158,6 +173,8 @@
             <div class="col-md-12"> 
                 <div style="text-align: right; padding: 50px" >  {{$categories->links()}} </div>
             </div>    
+            
+        
         </div>     
         @endforeach
     </div>
@@ -168,5 +185,7 @@
 
 
 @section('scripts')
+<!-- demo app -->
 <script src="assets/js/pages/demo.dashboard-analytics.js"></script>
+<!-- end demo js-->
 @endsection

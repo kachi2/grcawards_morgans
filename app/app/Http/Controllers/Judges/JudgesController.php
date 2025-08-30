@@ -39,13 +39,14 @@ class JudgesController extends Controller
         $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
         if (isset($award_program_id[0])) {
             //get judges
-            $current_award_program = AwardProgram::where('status', 1)->latest()->first();
-            $data['judges'] = Judge::where('award_program_id', $current_award_program->id)->get();
+            $data['judges'] = Judge::where('award_program_id', 5)->get();
             $data['award_program'] = $award_program;
             //mask the id for each judge
             foreach ($data['judges'] as $judge) {
                  $judge->hashid = Hashids::connection('judges')->encode($judge->id);
             }
+
+            //load view
             return view('contents.admin.judges', $data);
         }
         //if we get an invalid award program id, just go back to previous page
@@ -57,6 +58,7 @@ class JudgesController extends Controller
     public function Index(Request $request, $award_program)
     {
         // $award_program_id = Hashids::connection('awardProgram')->decode($award_program);
+
         $categories = Category::where('award_program_id', $award_program)->get();
         foreach ($categories as $category) {
             $category->hashid = Hashids::connection('category')->encode($category->id);
@@ -68,14 +70,14 @@ class JudgesController extends Controller
     }
 
    
+
+    // -----------------------loader -------------------
     public function ViewJudgeCategoryPage(Request $request, $award_program)
     {
-      
         $current_award_program = AwardProgram::where('status', 1)->latest()->first();
         $categories = Category::where(['award_program_id' => $current_award_program->id])->simplePaginate(1);
        foreach($categories  as $category){
         $category->hashid = Hashids::connection('category')->encode($category->id);
-        // $sector = Sector::where(['category_id' => $category->id])->get();
         foreach($category->sectors as $sectors){
             $sectors->hashid = Hashids::connection('sector')->encode($sectors->id);
         foreach($sectors->awards as $sec){
@@ -95,14 +97,4 @@ class JudgesController extends Controller
         }
         return view('contents.admin.judge.judgeCategories', $data);
     }
-
-   
-
-  
-  
-
-
-
-  
-
 }
