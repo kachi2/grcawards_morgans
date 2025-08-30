@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Judges;
 
 use App\Http\Controllers\Controller;
 use App\Models\VoteCount;
+
 use Illuminate\Http\Request;
 use Vinkla\Hashids\Facades\Hashids;
 use App\Traits\{AwardsGroups,JudgeVotes,NomineeResults,NomineesAwards};
