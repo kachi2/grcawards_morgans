@@ -23,8 +23,9 @@
 					<li>Summit</li>
 				</ul>
 			</div> --}}
-            <h5 class="title">GRC & FinCrime Prevention Mid-Year Summit 2025
-            </h5>
+            <!-- <h5 class="title">GRC & FinCrime Prevention Mid-Year Summit 2025</h5> -->
+            <h5 class="title">GRC & FinCrime Prevention Summit 2025</h5>
+
         </div>
     </div>
     <!-- page title -->
@@ -76,9 +77,9 @@
                     <div class="col-12" style="text-align:justify; ">
                         <ul class="mission-meta p-3" style="display: block">
                             <li><i aria-hidden="true" class="mdi mdi-map-marker-outline mdi-18px"></i>Venue: Microsoft Teams (Online Meeting) </li>
-                            <li><i aria-hidden="true" class="uil uil-calendar-alt"></i>Date: 6th,June 2025
+                            <li><i aria-hidden="true" class="uil uil-calendar-alt"></i>Date: Friday, 12th December, 2025
                             </li>
-                            <li><i class="mdi mdi-clock-outline"></i>Time: 12pm</li>
+                            <li><i class="mdi mdi-clock-outline"></i>Time: 10am - 12noon</li>
                             <li class="pt-3"><i class="mdi mdi-account-outline"></i> <a
                                     href="{{ route('summit_register') }}" target="_blank" style="font-size:25px">
                                     REGISTER HERE </a> </li>
@@ -99,8 +100,7 @@
 
                         <h4 class="col-12"
                             style="max-width:1300px;line-height:140%; margin-bottom:32px;padding-left:0;padding-right:0;">
-                            Theme: "Future-Proofing GRC & Financial Crime Prevention:
-                            The Convergence of AI, ESG, and Digital Compliance in a Rapidly Evolving Landscape
+                            Theme: "Zero-Latency Compliance: Real-time Governance, ESG Surveillance & Algorithmic Integrity - RegOps
                             "
                         </h4>
 
@@ -110,74 +110,89 @@
                             <h6 class="col-12" style="padding-left:0;padding-right:0;">🎯 About the Summit
                             </h6>
                             <p>
-                                The GRC & Financial Crime Prevention Mid-Year Summit 2025 is a strategic gathering of
+                                The GRC & Financial Crime Prevention Summit 2025 is a strategic gathering of
                                 industry leaders, innovators, regulators, and professionals committed to safeguarding
                                 institutions and communities from the growing complexities of governance, risk,
                                 compliance (GRC), and financial crime.
                                 Held at a pivotal point in the year, this summit provides an essential pulse-check on
                                 how organisations are adapting to the convergence of AI, ESG, and digital compliance to
                                 stay ahead of emerging threats, regulatory shifts, and technological disruption.
-
-
                             </p>
-
 
                             <p class="p-3"></p>
                             <h5 class="col-12 mb-1" style="padding-left:0;padding-right:0;">💡 Why This Theme?
                             </h5>
                             <br>
-                            <p class="mb-3"> With rapidly evolving regulatory landscapes, heightened ESG expectations,
-                                and the accelerated adoption of AI technologies, today’s GRC and FinCrime professionals
-                                must navigate a new frontier. This year’s theme focuses on future-proofing our
-                                frameworks by exploring:
+                            <p class="mb-3">
+                                The Zero-Latency Compliance: Real-Time Governance, ESG Surveillance & Algorithmic 
+                                Integrity – RegOps Summit brings together senior leaders from the public policy, 
+                                regulatory, governance, risk & compliance, technology, and ESG fields. Over one 
+                                to two days, participants will explore how organisations and governments are evolving 
+                                their regulatory-operations (“RegOps”) practices to keep pace with rapid change, 
+                                digitalisation, stakeholder demands and emergent risks.
                             </p>
                             <ul style="list-style: disc">
-                                <li> AI-driven compliance tools and ethical considerations</li>
+                                <li style="margin-bottom: 20px;"><strong>Acceleration of real-time data and monitoring capabilities</strong> <br> 
+                                    Advances in big data, IoT, sensors, streaming analytics and machine learning mean that organisations and regulators can increasingly monitor ESG, 
+                                    governance and compliance metrics on an ongoing, live basis. Research shows that real-time ESG analytics with big data and AI can enable continuous 
+                                    monitoring of sustainability performance, moving beyond static reporting.  This shift demands a re-thinking of compliance operations to handle 
+                                    zero-latency signals, anomalies, and dynamic risk.
+                                </li>
 
-                                <li> ESG risk as a new compliance frontier</li>
+                                <li style="margin-bottom: 20px;"> <strong>Growing regulatory and stakeholder pressure on ESG and governance</strong> <br>
+                                    ESG (Environmental, Social, Governance) disclosure standards are increasing globally, and stakeholders (investors, civil society, regulators) 
+                                    demand greater transparency. Technology is playing a key role in enabling ESG measurement and governance frameworks. 
+                                    Impact Investing Conferences. Under this pressure, compliance regimes cannot wait for periodic audits. They must embed continuous monitoring and governance, 
+                                    thus aligning with real-time governance.
+                                </li>
 
-                                <li> The digitalisation of due diligence, reporting, and audit</li>
+                                <li style="margin-bottom: 20px;"> <strong>Risks of algorithimic decision-making and integrity-failures</strong> <br>
+                                    As organisations deploy automated systems, AI/ML models and algorithmic decision-making in compliance, governance and ESG domains, there is elevated risk 
+                                    around fairness, transparency, bias, unseen errors, and integrity. A recent study on “algorithmic integrity” in public procurement shows how predictive 
+                                    frameworks can detect corruption patterns in real time. Addressing algorithmic integrity, ensuring models are accountable, auditable and aligned with governance expectations, is hence a core part of modern RegOps
+                                </li>
 
-                                <li> Cross-border data integrity and cyber risk</li>
+                                <li style="margin-bottom: 20px;"><strong>Need for integrated, holistic RegOps approach</strong> <br>
+                                    Historically, compliance, ESG oversight and algorithm governance have been siloed functions. But the emerging reality is that they overlap: ESG data is 
+                                    increasingly algorithmically processed, governance frameworks require real-time operationalisation, and regulatory operations must account for digital and 
+                                    methodological risk. Thus, the theme emphasises the integration: “Zero-Latency Compliance” captures the live-monitoring dimension; “Real-Time Governance, 
+                                    ESG Surveillance & Algorithmic Integrity” captures the three pillars; “RegOps” signifies the operational, process-oriented lens.
+                                </li>
 
-                                <li> Human-centred governance in an automated world</li>
+                                <li style="margin-bottom: 20px;"><strong>Relevance for developing markets and public policy contexts</strong> <br>
+                                    For countries and organisations in emerging markets—such as in Africa or Asia—there is a heightened urgency: governance systems are under pressure, data 
+                                    infrastructures are rising, ESG expectations are globalising, and algorithmic solutions are being adopted rapidly. A summit with this theme is well-placed to 
+                                    address the realities of implementation, capacity-building, risk mitigation and policy adaptation in those contexts.
+                                </li>
                             </ul>
 
 
                             <p class="p-3"></p>
                             <h5 class="col-12 mb-1" style="padding-left:0;padding-right:0;">💡 What to Expect </h5>
-                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;">Keynotes & Leadership Panels
+                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;">Expert Keynotes Addresses
                             </h6>
-                            <p class=" mb-2"> Hear from global experts and C-level executives shaping the future of
-                                GRC, ESG, and financial crime prevention.
+                            <p class=" mb-2"> Hear from global thought leaders on how real-time data, algorithimic monitoring and governance frameworks are reshaping GRC and ESG compliance.
                             </p>
-                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;">Interactive Workshops & Tech
-                                Demos
-
+                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;">Panel Sessions on ESG Surveillance
                             </h6>
-                            <p class=" mb-2"> Gain hands-on insights into AI tools, digital platforms, and ESG
-                                compliance technologies.
+                            <p class=" mb-2"> Monitoring environmental, social and governance metrics in an era of live data flows and rapidly shifting stakeholder expectations.
                             </p>
-
-                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;"> Case Studies & Industry
-                                Spotlights
-                            </h6>
-                            <p class=" mb-2">Learn from real-world implementations across banking, fintech, healthcare,
-                                energy, and public sector landscapes.
-                            </p>
-
-                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;"> Women in GRC & FinCrime
-                                Prevention Forum
+                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;">Workshops and break-outs on algorithmic integrity
 
                             </h6>
-                            <p class=" mb-2">A dedicated session spotlighting leadership, innovation, and inclusion.
+                            <p class=" mb-2"> How to ensure the models, automated systems and decision-making engines driving compliance operations are transparent, auditable and aligned with ethical/ regulatory standards.
 
                             </p>
 
-                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;">Global Regulatory Updates
+                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;"> Case Studies & Industry Applications
+                            </h6>
+                            <p class=" mb-2">Case-studies from both public sector (regulators, government agencies) and private sector (corporates, financial institutions, tech vendors) on implementing real-time governance and RegOps solutions.
+                            </p>
+
+                            <h6 class="col-12 mb-1" style="padding-left:0;padding-right:0;">Networking & Collaboration Opportunities
                             </h6>
                             <p class=" mb-2">
-                                Stay ahead of legislative trends with insights from regulators and policy experts.
+                                A networking forum for regulators, technologists, ESG specialists and compliance professionals to exchange practical lessons, tools, and strategic insight.
                             </p>
                             <h5 class="col-12 mb-1 pt-3" style="padding-left:0;padding-right:0;">💡 Who Should Attend?
                             </h5>
@@ -208,14 +223,9 @@
                         <div class="mission-info-text">
                             <h6 class="col-12" style="padding-left:0;padding-right:0;"> </h6>
                             <ol style="list-style-type: lower-roman;padding-right:10px;padding-left:0px;">
-                                Mid-Year Excellence Recognition
-                                This year’s summit will also feature a special Mid-Year Excellence Recognition —
-                                highlighting standout individuals and teams advancing GRC and FinCrime innovation.
-                                Call for Speakers & Sponsors
-                                Interested in joining the conversation as a speaker, partner, or exhibitor?
-                                Reach out to us via [Insert Contact Form or Email] or visit our Sponsorship
-                                Opportunities page.
-                                🌟
+                                The Summit’s mission is to help organisations move from reactive compliance (where issues are addressed after the fact) to proactive, 
+                                real-time, integrated governance — aligning regulatory operations, ESG oversight and algorithmic systems into a seamless, resilient platform for trust, 
+                                transparency and performance.
                             </ol>
                         </div>
                     </div>
@@ -552,9 +562,9 @@
                 <li><i class="mdi mdi-account-outline"></i> <a href="{{ route('summit_register') }}" target="_blank"
                         style="font-size:20px"> REGISTER HERE </a> </li>
                         <li><i aria-hidden="true" class="mdi mdi-map-marker-outline mdi-18px"></i>Venue: Microsoft Teams (Online Meeting) </li>
-                        <li><i aria-hidden="true" class="uil uil-calendar-alt"></i>Date: 6th,June 2025
+                        <li><i aria-hidden="true" class="uil uil-calendar-alt"></i>Date: Friday, 12th December, 2025
                         </li>
-                <li><i class="mdi mdi-clock-outline"></i>Time: 12:00noon - 2:00pm</li>
+                <li><i class="mdi mdi-clock-outline"></i>Time: 10:00am - 12:00noon</li>
 
             </ul>
 
