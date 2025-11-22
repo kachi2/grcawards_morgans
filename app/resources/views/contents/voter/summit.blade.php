@@ -243,17 +243,17 @@
 
                 <div class="slide-our-speaker">
                     <div class="our-speaker-item">
-                        <img src="{{asset('/assets/thomas.jpeg')}}"
+                        <img src="{{asset('/assets/images/speakers/summit_2025/ndidi_ahiauzu.jpeg')}}"
                             alt="img">
                         <div class="speaker-item-info"
                             style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Thomas Wan CK 尹志堅 IBFA, CFTP Snr, FICA, CCRO, MSCS
+                            <h3 class="name" style="font-size:18px">Ndidi Ahiauzu - FICA, PhD
                             </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">Moderator</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">EduCert Committee at Blockchain Association of Singapore; Consultant, SME at Singapore College of Insurance; Consultant / Course Director at International Compliance Association; Continuous Lifelong Learning</p>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Panelist Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Director, Fraud and Financial Crime Risk (DMLRO) - British Business Bank</p>
                             <div class="meta">
                                 <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/thomas-wan-ck-%E5%B0%B9%E5%BF%97%E5%A0%85-ibfa-cftp-snr-fica-ccro-mscs/" tabindex="-1"
+                                    <a href="https://www.linkedin.com/in/ndidi-ahiauzu-fica-phd-64a339110/" tabindex="-1"
                                         target="_blank">
                                         <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
                                             aria-hidden="true"></i>
@@ -266,17 +266,17 @@
 
                 <div class="slide-our-speaker">
                     <div class="our-speaker-item">
-                        <img src="{{asset('/assets/pittason.jpeg')}}"
+                        <img src="{{asset('/assets/images/speakers/summit_2025/oonagh_van_de_berg.jpeg')}}"
                             alt="img">
                         <div class="speaker-item-info"
                             style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Pattison Boleigha
+                            <h3 class="name" style="font-size:18px">Oonagh van De Berg
                             </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">Moderator</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">FCIN, CAMS, CRMA, CGEIT, FCA, HCIB, ACIT, Compliance, Governance, Security, Risk Manager| Anti-Money Laundering Specialist to Auditor| Compliance Officer</p>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Keynote Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">CEO | Founder | Compliance Education & Executive Director | AML Watcher</p>
                             <div class="meta">
                                 <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/pattison-boleigha-4829bb9/" tabindex="-1"
+                                    <a href="https://www.linkedin.com/in/oonaghvandenberg/" tabindex="-1"
                                         target="_blank">
                                         <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
                                             aria-hidden="true"></i>
@@ -289,17 +289,17 @@
 
                 <div class="slide-our-speaker">
                     <div class="our-speaker-item">
-                        <img src="{{asset('/assets/loretta.jpeg')}}"
+                        <img src="{{asset('/assets/images/speakers/summit_2025/aoife_mansfield.jpeg')}}"
                             alt="img">
                         <div class="speaker-item-info"
                             style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Loretta Joseph
+                            <h3 class="name" style="font-size:18px">Aoife Mansfield
                             </h3>
-                            <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p>
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Managing Director | Policy Group, Consultant, Senior Policy Advisor</p>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Panelist Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Managing Director, Athru Group</p>
                             <div class="meta">
                                 <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/loretta-joseph-853a5b142/" tabindex="-1"
+                                    <a href="https://www.linkedin.com/in/aoife-mansfield/" tabindex="-1"
                                         target="_blank">
                                         <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
                                             aria-hidden="true"></i>
@@ -312,17 +312,17 @@
 
                 <div class="slide-our-speaker">
                     <div class="our-speaker-item">
-                        <img src="{{asset('/assets/nicola.jpeg')}}"
+                        <img src="{{asset('/assets/images/speakers/summit_2025/tetiana_dmytrenko.jpeg')}}"
                             alt="img">
                         <div class="speaker-item-info"
                             style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Dr. Nicola Harding
+                            <h3 class="name" style="font-size:18px">Dr. Tetiana Dmytrenko
                             </h3>
-                            <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p>
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">CEO, We Fight Fraud</p>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Keynote Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">AML Adviser & Consultant - UNODOC</p>
                             <div class="meta">
                                 <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/dr-nic/" tabindex="-1"
+                                    <a href="https://www.linkedin.com/in/dr-tatiana-dmytrenko-b06120ab/" tabindex="-1"
                                         target="_blank">
                                         <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
                                             aria-hidden="true"></i>
@@ -334,41 +334,17 @@
                 </div>
                 <div class="slide-our-speaker">
                     <div class="our-speaker-item">
-                        <img src="{{asset('/assets/temi.jpeg')}}"
+                        <img src="{{asset('/assets/images/speakers/summit_2025/kersi_porbunderwala.jpeg')}}"
                             alt="img">
                         <div class="speaker-item-info"
                             style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Temitope Yusuff
- 
+                            <h3 class="name" style="font-size:18px">Kersi Porbunderwala
                             </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Director | Business and Finance Leader | Governance, Risk and Control Expert | Transforming Businesses to achieve Sustainable Growth</p>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Keynote Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">President & CEO, The Corporate Governance Institute</p>
                             <div class="meta">
                                 <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/temitope-yusuff-86b41b57/" tabindex="-1"
-                                        target="_blank">
-                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
-                                            aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide-our-speaker">
-                    <div class="our-speaker-item">
-                        <img src="{{asset('/assets/periham.jpeg')}}"
-                            alt="img">
-                        <div class="speaker-item-info"
-                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Perihan Abdelghaly
-                            </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Sustainable Finance | Strategic Lead | Emerging Markets | Education Expert | Corporate Trainer | Advisory Board Member of Women in Governance, Risk, Compliance, and Financial Crime Prevention (WGRCFP)</p>
-                            <div class="meta">
-                                <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/perihan-abdelghaly-phd-a1b34b38/" tabindex="-1"
+                                    <a href="https://www.linkedin.com/in/kersi-porbunderwala-8760642/" tabindex="-1"
                                         target="_blank">
                                         <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
                                             aria-hidden="true"></i>
@@ -381,17 +357,17 @@
 
                 <div class="slide-our-speaker">
                     <div class="our-speaker-item">
-                        <img src="{{asset('/assets/oseni.jpeg')}}"
+                        <img src="{{asset('/assets/images/speakers/summit_2025/fiona_figuera.jpeg')}}"
                             alt="img">
                         <div class="speaker-item-info"
                             style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Dr. Ezekiel Oseni
+                            <h3 class="name" style="font-size:18px">Fiona Figuera
                             </h3>
-                            <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p>
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">President & Chairman of Council Chartered Risk Management Institute of Nigeria || Ph.D., Business & Applied Economics || Professor of Accounting and Finance at Babcock University Business</p>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Panelist Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Director, Head of Compliance (SMF16) & MLRO (SMF17) - Capital Markets Elite Group</p>
                             <div class="meta">
                                 <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/dr-ezekiel-oseni/" tabindex="-1"
+                                    <a href="https://www.linkedin.com/in/fiona-figuera-cams-fas-crt-mica-camlfc-mfafd-pgdip-fafd-7868a67b/" tabindex="-1"
                                         target="_blank">
                                         <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
                                             aria-hidden="true"></i>
@@ -402,151 +378,19 @@
                     </div>
                 </div>
 
-
-                
-
-
-                 <div class="slide-our-speaker">
+                <div class="slide-our-speaker">
                     <div class="our-speaker-item">
-                        <img src="{{asset('/assets/pietro.jpeg')}}"
+                        <img src="{{asset('/assets/images/speakers/summit_2025/yvonne_mothibi.jpeg')}}"
                             alt="img">
                         <div class="speaker-item-info"
                             style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Pietro Odorisio 
+                            <h3 class="name" style="font-size:18px">Yvonne Mothibi
                             </h3>
-                            <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p>
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">
-                              Compliance Solutions Advocacy | RegTech Communication Specialist | Anti-Money Laundering Exper
-                            </p>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Panelist Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">CEO, Institute of Risk Management South Africa - IRMSA</p>
                             <div class="meta">
                                 <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/pietro-odorisio-30ab009a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" tabindex="-1"
-                                        target="_blank">
-                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
-                                            aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="slide-our-speaker">
-                    <div class="our-speaker-item">
-                        <img src="{{asset('/assets/ijebor.jpeg')}}"
-                            alt="img">
-                        <div class="speaker-item-info"
-                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Blaise Ijebor 
-                            </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">
-                             Director, Risk Management Department and Chief Risk Officer
-                            </p>
-                            <div class="meta">
-                                <span class="post-tag" style="margin-right:7px;">
-                                    <a href="hhttps://www.linkedin.com/in/blaise-ijebor-2665b17/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" tabindex="-1"
-                                        target="_blank">
-                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
-                                            aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="slide-our-speaker">
-                    <div class="our-speaker-item">
-                        <img src="{{asset('/assets/bend.jpeg')}}"
-                            alt="img">
-                        <div class="speaker-item-info"
-                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Benedicta (Lara) Onanuga MBA, FICA, HCIB, MA Regulations and Compl 
-                            </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">
-                            Head Financial Crime Compliance and MLRO at Guaranty Trust Bank (UK) Limited
-                            </p>
-                            <div class="meta">
-                                <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/benedicta-onanuga-mba-fica-hcib-ma-regulations-and-compl-8b90a381/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" tabindex="-1"
-                                        target="_blank">
-                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
-                                            aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="slide-our-speaker">
-                    <div class="our-speaker-item">
-                        <img src="{{asset('/assets/akani.jpeg')}}"
-                            alt="img">
-                        <div class="speaker-item-info"
-                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Abdulrahman Akanbi - CISSP, CISM, MCP, CC, MCT
-                            </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">
-                            Cybersecurity Leader | Keynote Speaker | Bridging the Cybersecurity Skills Gap | Building a Resilient Digital Future
-                            </p>
-                            <div class="meta">
-                                <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/abyinkus/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" tabindex="-1"
-                                        target="_blank">
-                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
-                                            aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                 <div class="slide-our-speaker">
-                    <div class="our-speaker-item">
-                        <img src="{{asset('/assets/akan.jpeg')}}"
-                            alt="img">
-                        <div class="speaker-item-info"
-                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Edidiong Akan
-                            </h3>
-                            {{-- <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p> --}}
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">
-                           Chief Compliance Officer at Stanbic IBTC Pension
-                            </p>
-                            <div class="meta">
-                                <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/edidiong-akan-6a152922/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" tabindex="-1"
-                                        target="_blank">
-                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
-                                            aria-hidden="true"></i>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                   <div class="slide-our-speaker">
-                    <div class="our-speaker-item">
-                        <img src="{{asset('/assets/erin.jpeg')}}"
-                            alt="img">
-                        <div class="speaker-item-info"
-                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
-                            <h3 class="name" style="font-size:18px">Erin O'Loughlin, CFCS, CAMS
-                            </h3>
-                            <p class="prof" style="font-size:16px;line-height:1rem;">(Keynote Speaker)</p>
-                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">
-                          Senior Director of Training at Association of Certified Financial Crime Specialists - ACFCS
-                            </p>
-                            <div class="meta">
-                                <span class="post-tag" style="margin-right:7px;">
-                                    <a href="https://www.linkedin.com/in/erin-o-loughlin/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" tabindex="-1"
+                                    <a href="https://www.linkedin.com/in/yvonne-mothibi-92637948?utm_source=share_via&utm_content=profile&utm_medium=member_android" tabindex="-1"
                                         target="_blank">
                                         <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
                                             aria-hidden="true"></i>
