@@ -101,10 +101,35 @@
 					<div class="col-lg-6 our-mission-info mt-5 mt-sm-0">
 					<h4>Celebrating Excellence and Achievements Attained in the GRC and Financial Crime Prevention Space.</h4>
 						<div class="mission-info-text">
-							<p>The GRC & Financial Crime Prevention Awards and Summit – Europe is the region's premier gathering for compliance professionals, regulators, executives, and innovators. It celebrates excellence in Governance, Risk Management, Compliance, and Financial Crime Prevention across key industries including banking, fintech, health, energy, and public sector.</p>
-	
+							<!-- <p>The GRC & Financial Crime Prevention Awards and Summit – Europe is the region's premier gathering for compliance professionals, regulators, executives, and innovators. It celebrates excellence in Governance, Risk Management, Compliance, and Financial Crime Prevention across key industries including banking, fintech, health, energy, and public sector.</p> -->
+							<p>The Organizers of this awards are advocates for effective Governance, Risk & Compliance system in organisations and a promoter of Anti-Money Laundering and Counter-Terrorism Measures hence the reason for coming up with an initative (GRC & Financial Crime Prevention Awards) to recognize individuals and organisations across the various industries in Africa and the Europe who have been outstanding and have demonstrated expertise in this field.</p>
+							<p>The GRC & Financial Crime Prevention Annual Awards was created to recognise outstanding contributions by individuals and companies to the development, understanding, or implementation of GRC systems in in the global economy</p>
+
 						</div>
 						<a href="{{route('about_the_award')}}" class="btn" tabindex="-1"><span>Read More</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="s-our-mission s-about-speaker">
+			<div class="container">
+				<h2 class="title-conference"><span>Event Venue</span></h2>
+				<div class="row">
+					<div class="col-lg-6 our-mission-img" style="margin-top:auto;margin-bottom:auto">
+						<!-- <span> -->
+						<img src="assets/images/placeholder-all.png" data-src="assets/images/our-mission-2.svg" alt="" class="mission-img-effect-1 rx-lazy">
+						<img src="{{asset('assets/images/event_veneue.jpg')}}" width="500px"> 
+						<img src="assets/images/placeholder-all.png" data-src="assets/images/tringle-gray-little.svg" alt="" class="about-img-effect-2 rx-lazy">
+						<!-- </span> -->
+					</div>
+					<div class="col-lg-6 our-mission-info mt-5 mt-sm-0">
+					<h3>GRC & Financial Crime Prevention Awards & Summit  </h3>
+						Date: <h3>12th Dec, 2025</h3>
+						Venue: <h3>Microsoft Teams (Online Meeting)</h3>
+						Time: <h3> Summit: 10am - 12noon</h3>
+						<h3> Awards and Ceremony: 6pm - 9pm</h3>
+					</div>
 					</div>
 				</div>
 			</div>
