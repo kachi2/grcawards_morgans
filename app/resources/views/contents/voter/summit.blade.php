@@ -401,6 +401,28 @@
                     </div>
                 </div>
 
+                 <div class="slide-our-speaker">
+                    <div class="our-speaker-item">
+                        <img src="{{asset('/assets/images/speakers/summit_2025/mathew_beale.jpeg')}}"
+                            alt="img">
+                        <div class="speaker-item-info"
+                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
+                            <h3 class="name" style="font-size:18px">Mathew Beale
+                            </h3>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Panelist Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Managing Director, Comsure Group</p>
+                            <div class="meta">
+                                <span class="post-tag" style="margin-right:7px;">
+                                    <a href="https://www.linkedin.com/in/mathewbealecomsure/" tabindex="-1"
+                                        target="_blank">
+                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="pt-5">
                 <li><i class="mdi mdi-account-outline"></i> <a href="{{ route('summit_register') }}" target="_blank"
