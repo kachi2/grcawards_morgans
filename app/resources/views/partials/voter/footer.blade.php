@@ -10,7 +10,7 @@
                     <i aria-hidden="true" class="mdi mdi-phone"></i>
                     {{-- <a href="tel:01-7001770">01-7001770</a><br> --}}
                     <i aria-hidden="true" class="mdi mdi-phone"></i>
-                    <a href="tel:09153414314">09153414314</a><br>
+                    <a href="tel:+2349153414314">+234-9153414314</a><br>
                     <i aria-hidden="true" class="mdi mdi-email-outline"></i>
                     <a href="mailto:events@grcfincrimeawards.com">events@grcfincrimeawards.com</a>
                 </p>
@@ -20,7 +20,7 @@
                 </div>
                 <p>85 Great Portland Street, First Floor, London W1W 7LT, United Kingdom<br>
                     <i aria-hidden="true" class="mdi mdi-phone"></i>
-                    <a href="tel:+447466588324">+44-7466588324</a><br>
+                    <a href="tel:+442078560149">+44-2078560149</a><br>
                     <i aria-hidden="true" class="mdi mdi-email-outline"></i>
                     <a href="mailto:events@grcfincrimeawards.com">events@grcfincrimeawards.com</a>
                 </p>

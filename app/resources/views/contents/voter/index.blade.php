@@ -127,8 +127,8 @@
 					<h3>GRC & Financial Crime Prevention Awards & Summit  </h3>
 						Date: <h3>12th Dec, 2025</h3>
 						Venue: <h3>Microsoft Teams (Online Meeting)</h3>
-						Time: <h3> Summit: 10am - 12noon</h3>
-						<h3> Awards and Ceremony: 6pm - 9pm</h3>
+						Time: <h3> Summit: 11am - 1pm</h3>
+						<h3> Awards and Ceremony: 1pm - 3pm</h3>
 					</div>
 					</div>
 				</div>

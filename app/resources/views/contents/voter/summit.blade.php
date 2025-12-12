@@ -5,6 +5,7 @@
 <head>
     @include('partials.voter.head')
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick.min.css') }}" />
+    <link href="{{asset('assets/css/model-new.css')}}" rel="stylesheet" />
 </head>
 
 <body id="conference-page">
@@ -79,7 +80,7 @@
                             <li><i aria-hidden="true" class="mdi mdi-map-marker-outline mdi-18px"></i>Venue: Microsoft Teams (Online Meeting) </li>
                             <li><i aria-hidden="true" class="uil uil-calendar-alt"></i>Date: Friday, 12th December, 2025
                             </li>
-                            <li><i class="mdi mdi-clock-outline"></i>Time: 10am - 12noon</li>
+                            <li><i class="mdi mdi-clock-outline"></i>Time: 11am - 1pm</li>
                             <li class="pt-3"><i class="mdi mdi-account-outline"></i> <a
                                     href="{{ route('summit_register') }}" target="_blank" style="font-size:25px">
                                     REGISTER HERE </a> </li>
@@ -194,6 +195,9 @@
                             <p class=" mb-2">
                                 A networking forum for regulators, technologists, ESG specialists and compliance professionals to exchange practical lessons, tools, and strategic insight.
                             </p>
+                            <div style="margin-bottom:15px;">
+                                <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#order-of-programme-modal">Order of Programme</a>
+                            </div>
                             <h5 class="col-12 mb-1 pt-3" style="padding-left:0;padding-right:0;">💡 Who Should Attend?
                             </h5>
                             <br>
@@ -423,6 +427,51 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="slide-our-speaker">
+                    <div class="our-speaker-item">
+                        <img src="{{asset('/assets/images/speakers/summit_2025/olu_popoola.jpeg')}}"
+                            alt="img">
+                        <div class="speaker-item-info"
+                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
+                            <h3 class="name" style="font-size:18px">Olu Popoola
+                            </h3>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Panelist Speaker</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Financial Crime Technical Expert | Machine Learning (ML) Driven Risk & Compliance Specialist</p>
+                            <div class="meta">
+                                <span class="post-tag" style="margin-right:7px;">
+                                    <a href="https://www.linkedin.com/in/olu-popoola-02a1a3311/" tabindex="-1"
+                                        target="_blank">
+                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-our-speaker">
+                    <div class="our-speaker-item">
+                        <img src="{{asset('/assets/images/speakers/summit_2025/mateo_jarrin.jpeg')}}"
+                            alt="img">
+                        <div class="speaker-item-info"
+                            style="position: relative;padding-left:15px;padding-right:15px;bottom:40px">
+                            <h3 class="name" style="font-size:18px">Mateo jarrin Cuvi
+                            </h3>
+                            <p class="prof" style="font-size:16px;line-height:1rem;">Moderator</p>
+                            <p class="prof mt-2" style="font-size:16px;line-height:1rem;">Global Manager for the Association of Governance, Risk & Compliance (AGRC)</p>
+                            <div class="meta">
+                                <span class="post-tag" style="margin-right:7px;">
+                                    <a href="https://www.linkedin.com/in/mateojarrincuvi/" tabindex="-1"
+                                        target="_blank">
+                                        <i class="mdi mdi-linkedin mdi-24px" style="color:#fff"
+                                            aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="pt-5">
                 <li><i class="mdi mdi-account-outline"></i> <a href="{{ route('summit_register') }}" target="_blank"
@@ -430,7 +479,7 @@
                         <li><i aria-hidden="true" class="mdi mdi-map-marker-outline mdi-18px"></i>Venue: Microsoft Teams (Online Meeting) </li>
                         <li><i aria-hidden="true" class="uil uil-calendar-alt"></i>Date: Friday, 12th December, 2025
                         </li>
-                <li><i class="mdi mdi-clock-outline"></i>Time: 10:00am - 12:00noon</li>
+                <li><i class="mdi mdi-clock-outline"></i>Time: 11:00am - 01:00pm</li>
 
             </ul>
 
@@ -452,6 +501,30 @@
     @include('partials.voter.footer')
     <!--================== FOOTER END ==================-->
 
+        <!-- ================ MODALS ================ -->
+
+    <div class="modal fade" id="order-of-programme-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header py-3 px-4 border-bottom-0">
+                    <h5 class="modal-title" id="modal-title">Order of Programme</h5>
+                    <a class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="mdi mdi-close-circle mdi-24px" style="color: red;"></i></a>
+                </div>
+
+                <div class="modal-body px-4 pb-4 pt-0">
+                    <section class="s-our-mission s-about-speaker" style="padding:0px">
+                        <div class="row" style="flex-direction: column;">
+                            <div class="col-lg-12 our-mission-info">
+                                <img src="{{asset('/assets/summit_order_of_programme.jpg')}}" alt="Order of programme" style="width: 100%;height:auto;">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================ MODALS END ================ -->
+
     <!--=================== TO TOP ===================-->
     <a class="to-top" href="#home">
         <i class="mdi mdi-chevron-double-up" aria-hidden="true"></i>
@@ -460,7 +533,8 @@
 
     <!--=================== SCRIPT	===================-->
     @include('partials.voter.scripts')
-
+    <script src="{{asset('assets/js/vendor.min.js')}}"></script>
+    <script src="{{asset('assets/js/app.min.js')}}"></script>
 
     <script>
         // Set the date we're counting down to
