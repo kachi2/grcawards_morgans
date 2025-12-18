@@ -158,14 +158,17 @@ class LandingPageController extends Controller
     public function showWinners(){
         return view('contents.voter.winners');
     }
-    public function showWinners2022(){
-        return view('contents.voter.winners2');
-    }
-    public function showWinners2023(){
-        return view('contents.voter.winners3');
-    }
-    public function showWinners2024(){
-        return view('contents.voter.winners4');
+    // public function showWinners2022(){
+    //     return view('contents.voter.winners2');
+    // }
+    // public function showWinners2023(){
+    //     return view('contents.voter.winners3');
+    // }
+    // public function showWinners2024(){
+    //     return view('contents.voter.winners4');
+    // }
+    public function showWinners2025(){
+        return view('contents.voter.winners5');
     }
     public function showPicturesCategories(){
         $awardPrograms = [];

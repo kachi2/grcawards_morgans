@@ -134,10 +134,11 @@ Route::get('others/privacy-policy', [LandingPageController::class, 'showPolicy']
 Route::get('others/terms-and-conditions', [LandingPageController::class, 'showTc'])->name('show_tc');
 Route::get('media/press-announcements', [LandingPageController::class, 'showPress'])->name('show_press');
 Route::get('2021/shortlisted-nominees', [LandingPageController::class, 'showShortlistedNominees'])->name('show_shortlisted_nomineees');
-Route::get('winners/2021', [LandingPageController::class, 'showWinners'])->name('show_winners');
-Route::get('winners/2022', [LandingPageController::class, 'showWinners2022'])->name('show_winners2022');
-Route::get('winners/2023', [LandingPageController::class, 'showWinners2023'])->name('show_winners2023');
-Route::get('winners/2024', [LandingPageController::class, 'showWinners2024'])->name('show_winners2024');
+// Route::get('winners/2021', [LandingPageController::class, 'showWinners'])->name('show_winners');
+// Route::get('winners/2022', [LandingPageController::class, 'showWinners2022'])->name('show_winners2022');
+// Route::get('winners/2023', [LandingPageController::class, 'showWinners2023'])->name('show_winners2023');
+// Route::get('winners/2024', [LandingPageController::class, 'showWinners2024'])->name('show_winners2024');
+Route::get('winners/2025', [LandingPageController::class, 'showWinners2025'])->name('show_winners2025');
 
 Route::get('media/pictures', [LandingPageController::class, 'showPicturesCategories'])->name('show_pictures_categories');
 Route::get('media/pictures/{award_program}', [LandingPageController::class, 'showPictures'])->name('show_pictures');
